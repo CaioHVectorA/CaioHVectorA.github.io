@@ -1,0 +1,38 @@
+<a href="/index.html">Voltar</a>
+
+<h1 id="texto">Olá Mundos.</h1>
+
+<style>
+h1 {
+ color: green;
+}
+</style>
+
+<script>
+
+
+
+var num;
+if (num != 1) {
+num = 1
+}
+
+
+function mudar() {
+ if (num == 1) {
+    texto.style.color = "red";
+    console.log(num)
+    num += 1
+ } else if (num == 2) {
+    texto.style.color = "blue";
+    console.log(num)
+    num += 1
+ }
+ else if (num == 3) {
+    texto.style.color = "yellow";
+    console.log(num)
+    num = 1
+ }
+}
+texto.addEventListener("click",mudar);
+</script>

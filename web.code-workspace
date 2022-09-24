@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\..\\ediçoes etc iso\\LOGOS UVC ETC"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "web"
+  }
+}

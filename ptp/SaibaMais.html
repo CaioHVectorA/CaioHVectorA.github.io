@@ -1,0 +1,69 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiba Mais</title>
+    <link rel="stylesheet" href="textocomum.css">
+</head>
+<body>
+    <div id="preto">UVC | Caio Henrique <span id="ultimo">Quer mandar alguma mensagem?<a class="underline">Entre em contato</a></span></div>
+
+    <header class="header">
+        <a href="/index.html"><img class="uvcortado" src="img/uvc cortado.png" alt="UVCtransparente"></a>
+        <nav id="nav">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" id="btn-mobile"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg>
+            <!-- <button id="btn-mobile">M
+                enu</button> -->
+         <ul id="coiso">
+            <li><a href="/" class="menu">Series</a></li>
+            <li><a href="/" class="menu">Solos</a></li>
+            <li><a href="/" class="menu">Outros</a></li>
+            <li class="mobileonly"><a href="/" class="menu">Personagens</a></li>
+            <li><a href="/" class="menu">Saiba Mais</a></li>
+            <li class="mobileonly"><a href="/" class="menu">Doação</a></li>
+            <li class="mobileonly"><a href="/" class="menu">Contato</a></li>
+         </ul>
+    </nav>
+    </header>
+
+
+<div id="img-saibamais">
+
+    <h1>Entenda Tudo sobre o UVC!</h1>
+    <h3>Explicações,origens e até curiosidades!</h3>
+</div>
+<br>
+<h1 id="titulosaibamais">Perguntas Frequentes</h1>
+
+<div id="gridcards">
+<div id="cardfaq1" class="cardfaq">
+<h1 id="pergunta">O que é o UVC?</h1>
+<p id="resposta1" class="resposta">UVC significa <b>Universo Vector de Contos</b>,o qual é um projeto pequeno sem fins financeiros para compartilhar histórias fictíceas</p>
+<div id="abridor"><img id="seta1" src="/SVGs/OOjs_UI_icon_expand.svg" alt=""></div>
+
+</div>
+
+
+
+</div>
+
+</html>
+
+<script>
+
+
+
+function estavel1() {
+    var cardfaq = document.getElementById('cardfaq1')
+    var resposta = document.getElementById('resposta1')
+    resposta.classList.toggle('active')
+    cardfaq.classList.toggle('active')
+}
+
+
+const seta1 = document.getElementById('seta1') 
+const seta2 = document.getElementById('seta2') 
+const seta3 = document.getElementById('seta3') 
+seta1.addEventListener('click',estavel1)
+</script>

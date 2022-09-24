@@ -1,0 +1,499 @@
+/* Tela 2  */
+
+/* parte1 */
+#titulolançamentos, #subtitulolançamentos {
+    display: none;
+}
+
+#carretel {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px;
+    position: relative;
+    top: calc(2rem + 2.5%);
+    background: #a33c99;
+    background-image: url(img/Congregadores\ tela.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    width: 66%;
+    height: calc(30vw + 13%);
+    border-radius: 1.2rem;
+}
+
+#carretel:hover {
+    cursor: pointer;
+}
+
+#carretexto:hover {
+    cursor: text;
+}
+
+#fundo-pag2 {
+    background: rgba(0, 0, 0,0.55);
+    display: grid;
+    justify-items: center;
+    /* opacity: 0.63; */
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 101px);
+    top: 101px;
+    z-index: 100;
+}
+
+.seta {
+    /* display: none; */
+    align-self: center;
+    /* color: white; */
+    position: absolute;
+    right: 90%;
+    height: 80px;
+    width: 80px;
+    opacity: 60%;
+}
+
+.seta2 {
+    /* display: none; */
+    align-self: center;
+    /* fill: black; */
+    position: absolute;
+    /* left: 960px; */
+    margin-left: 90%;
+
+
+    height: 80px;
+    width: 80px;
+    opacity: 60%;
+}
+
+.underline-pt2{
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 0.6rem;
+    font-size: 21px;
+}
+
+.underline-pt2::after{
+content: ":";
+}
+
+#carretexto {
+    /* display: flex; */
+    flex-wrap: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 0.4rem 1.1rem;
+    /* right: 12rem; */
+    color: e7e7e7;
+    align-self: flex-end;
+    background:rgba(44, 44, 44,0.95);
+    border-radius: 0px 0px 1.2rem 1.2rem;
+    /* font-size: 1rem; */
+    /* float: left; */
+    /* overflow: hidden; */
+}
+
+#legenda {
+    font-size: 1.27vw;
+    color: #e7e7e7;
+    letter-spacing: 0.4px;
+    /* flex-wrap: nowrap; */
+}
+
+#legenda::after {
+    content: "Confira a jornada de Ciecon,herói que sonha com um universo justo e não vai parar enquanto não tiver isso!Ele terá aliados ao seu lado e tirará inimigos de sua frente a força.";
+}
+
+.seta:hover,.seta2:hover {
+    cursor: pointer;
+}
+
+@media (max-width:660px) {
+
+    #titulolançamentos {
+        display: block;
+        margin-top: 50px;
+        margin-bottom: -100px;
+    }
+
+    #subtitulolançamentos {
+        display: block;
+    }
+
+
+    #carretexto {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        /* right: 30.9rem; */
+        width: 95%;
+    }
+
+     #legenda::before {
+        content: "Confira:";
+        margin-right: 1.6rem;
+    } 
+
+    #carretel {
+        height: 82vw;
+        width: 82vw;
+        background-repeat: repeat-y;
+        top: calc(1rem + 2.2%)
+    }
+
+     /* #carretel::before {
+        content: "Lançamentos";
+        color: #e7e7e7;
+        font-size: 4.8rem;
+        font-family: Gabriela;
+        position: relative;
+        bottom: 6rem;
+        left: 7vw;
+        text-align: center;
+        text-shadow: 0px 0px 20px #CD00CE, 0px 10px 20px #CEB125;
+         justify-self: center; 
+         max-height: 6rem;
+    }  */
+
+
+    #legenda {
+        /* flex-wrap: nowrap; */
+        font-size: 7vw;
+        /* text-align: center; */
+    }
+
+    #legenda::after {
+        content: "";
+    }
+
+    .underline-pt2::after{
+        content: "";
+        }
+
+        .seta, .seta2 {
+            display: none;
+        }
+}
+
+@media (max-width: 1000px) {
+    .seta, .seta2 {
+        display: none;
+    }
+}
+
+
+
+/* parte 2 pag 2 */
+
+
+#fundo2-pag2 {
+    /* display: block; */
+    top: 100%;
+    position: relative;
+    background: var(--cor-fundo);
+    /* z-index: 200; */
+    margin-top: 2000px;
+    max-width: 100%;
+    max-height: 2223px;
+}
+
+#testr {
+    font-family: Gabriela;
+    position: relative;
+    /* left: 33.5vw; */
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    background: #913487;
+    box-shadow: inset 0px -10px 0.5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding: 1.2rem 6rem;
+    /* margin: 0 auto; */
+    /* min-width: 120px; */
+
+}
+
+#dropbox {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 300px;
+    max-height: 230px;
+    gap: 1rem;
+    margin-top: 0px;
+    position: relative;
+    top: -210rem;
+    left: 33.5%;
+    z-index: 3210938120938219381928309810312803918;
+}
+
+#dropbox svg {
+    position: relative;
+    height: 6vw;
+    top: 130%;
+    left: 85%;
+    /* right: -36.8rem; */
+    fill: white;
+    /* left: 0px; */
+    z-index: 10000000000000;
+}
+
+#setaexpand:hover #testr {
+    display: none;
+}
+
+
+#testr2 {
+    font-family: Gabriela;
+    position: relative;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    background: #913487;
+    box-shadow: inset 0px -10px 0.5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding: 1.2rem 6rem;
+    display: none;
+    /* margin: 0 auto; */
+    /* min-width: 120px; */
+
+
+}
+
+#testr3 {
+    font-family: Gabriela;
+    position: relative;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    background: #913487;
+    box-shadow: inset 0px -10px 0.5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding: 1.2rem 6rem;
+    display: none;
+    /* margin: 0 auto; */
+    /* min-width: 120px; */
+}
+
+#dropbox.active #testr2 {
+    display: block;
+}
+
+#dropbox.active #testr3 {
+    display: block;
+}
+
+/* #dropbox.active svg {
+    transform: rotate(1.5turn); 
+} */
+
+
+
+
+#testr:hover,#testr2:hover,#testr3:hover {
+    cursor: pointer;
+    background: var(--cor-destaqueterciaria);
+}
+
+svg:hover {
+    cursor: pointer;
+    /* background: #582053; */
+}
+
+#tipo,#local {
+    font-size: 1.6rem;
+    font-family: Roboto_Serifa;
+    text-transform: uppercase;
+    margin-top: 1.4rem;
+}
+
+#tipo {
+    color: #CEB125;
+    margin-left: 2rem;
+    order: 1;
+}
+
+#local {
+    margin-left: 16rem;
+    color: white;
+    order: 2;
+}
+
+#caixatitulo {
+    color: white;
+    font-size: 3rem;
+    font-family: Roboto_Serifa;
+    position: relative;
+    right: -2.3rem;
+    top: -1rem;
+    order: 3;
+    
+}
+
+#caixatitulo::after {
+    content: "Parte I";
+    color: white;
+    font-size: 2rem;
+    font-family: Roboto_Serifa;
+    position: relative;
+    right: 16rem;
+    top: 2.5rem;
+}
+
+.descricao {
+    color: white;
+    font-size: 1.72rem;
+    font-family: Roboto_Serifa;
+    order: 4;
+    /* padding: 0rem 0.5rem; */
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+#img-caixa1 {
+    margin-left: 20px;
+    background-image: url(/img/MeninoResiliente.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: 0rem;
+    /* border: 1px solid rgba(36, 32, 32, 0.15); */
+    /* box-shadow: inset -2px 0px 4px rgba(0, 0, 0, 0.5); */
+}
+
+#img-caixa2 {
+    margin-left: 20px;
+    background-image: url(/img/DerooDaem.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 73rem;
+    height: 30rem;
+    margin-bottom: 0rem;
+    /* border: 1px solid rgba(36, 32, 32, 0.15); */
+    /* box-shadow: inset -2px 0px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.caixatexto {
+    margin-top: -2rem;
+    margin-left: 20px;
+    display: flex;
+    background: #131010;
+    width: 30rem;
+    height: 25rem;
+    box-shadow: inset 0px -6px 2px rgba(0, 0, 0, 0.35);
+    /* justify-content: center; */
+}
+
+.caixatexto2 {
+    margin-top: -2rem;
+    margin-left: 20px;
+    display: flex;
+    background: #131010;
+    width: 73rem;
+    height: 25rem;
+    box-shadow: inset 0px -6px 2px rgba(0, 0, 0, 0.35);
+    /* justify-content: center; */
+}
+
+
+
+.caixatexto, .caixatexto2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caixa {
+    position: relative;
+    top: -162rem;
+    width: 30rem;
+}
+
+.caixa2 {
+    position: relative;
+    top: -162rem;
+    width: 73rem;
+    grid-column: 1 / 3;
+}
+
+#gridcaixas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    margin: 0px;
+    margin-top: -5rem;
+    margin-left: 4%;
+    margin-right: 4%;
+    gap: 13rem;
+    
+}
+
+@media (max-width:660px) {
+
+    #gridcaixas {
+        gap: 12vh;
+        margin-top: 0rem;
+        position: relative;
+        top: -170rem;
+        margin-left: 13.5%;
+    }
+
+    .caixa {
+        position: relative;
+        top: -120%;
+        width: 30rem;
+    }
+   
+    .caixa2 {
+        display: none;
+    }
+
+    svg {
+        display: none;
+    }
+
+    #dropbox {
+        top: -200rem;
+        /* top: -91.5%; */
+        z-index: 2000000000000000;
+        left: 11%;
+        /* display: none; */
+    }
+
+    #testr,#testr2,#testr3 {
+        width: 120px;
+        margin: 0 auto; 
+        padding: 10px 30px;
+    }
+
+}
+
+
+@media (max-width: 660px) and (min-height: 800px) {
+    #dropbox {
+        top: -220rem;
+        left: 0px;
+        margin: 0 auto;
+    }
+
+    .caixa {
+        position: relative;
+        top: -80%;
+        /* top: -135vh; */
+        width: 30rem;
+    }
+
+
+}
+
+@media (max-height: 799px) and (min-height: 500px) and (max-width: 660px) {
+    #dropbox {
+        top: -244rem;
+    }
+
+    #subtitulolançamentos {
+        margin-top: 40px;
+     }
+}

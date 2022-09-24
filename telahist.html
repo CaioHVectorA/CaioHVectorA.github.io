@@ -1,0 +1,142 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congregadores</title>
+    <link rel="stylesheet" href="textocomum.css">
+</head>
+<body>
+    <div id="preto">UVC | Caio Henrique <span id="ultimo">Quer mandar alguma mensagem?<a class="underline">Entre em contato</a></span></div>
+
+    <header class="header">
+        <a href="index.html"><img class="uvcortado" src="img/uvc cortado.png" alt="UVCtransparente"></a>
+        <nav id="nav">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" id="btn-mobile"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg>
+            <!-- <button id="btn-mobile">M
+                enu</button> -->
+         <ul id="coiso">
+            <li><a href="Contos.html" class="menu">Todos os Contos</a></li>
+            <li><a href="Contos.html"class="menu">Series</a></li>
+            <li><a href="Contos.html" class="menu">Solos</a></li>
+            <li class="mobileonly"><a href="/" class="menu">Personagens</a></li>
+            <li><a href="/" class="menu" id="naousa">Saiba Mais</a></li>
+            <li class="mobileonly"><a href="/" class="menu">Doação</a></li>
+            <li class="mobileonly"><a href="/" class="menu">Contato</a></li>
+         </ul>
+    </nav>
+    </header>
+
+<div id="containerhist">
+    <div class="partes" id="parte1"></div>
+    <div class="partes" id="parte3"></div>
+    <div id="titulosubtitulohist">
+<h1 id="titulonomehist">Congregadores</h1>
+<h2 id="subtitulonomehist">Ep 3:A Falsidade</h2>
+</div>
+<p id="boxsinopse">Deroo Da está indo rumo à onde Amara Denmark faz seus experimentos.O que será que vai acontecer?</p>
+<div id="boxiframe"><object style="width:463;" height="565"  data="pdfs/S_Ciecon.pdf"></object></div>
+<h1 id="infos">Infos</h1>
+<h2 id="infos2">Informações sobre a história abaixo.</h2>
+<p id="dropboxinfos">Deroo Da,um gênio do universo decide começar a escrever suas aventuras e feitos pelo espaço a partir da sua visão completamente científica.Ele vai analisar,desfrutar e principalmente,enfrentar as cosias mais incríveis do universo. 
+    Deroo Da foi um dos primeiros personagens neutros a serem criados,Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aperiam officia saepe error deleniti ex similique. At repellat natus minus, porro voluptatibus nihil est dolorum harum dignissimos! Nam, fuga voluptatem.
+
+
+</p>
+<div id="boxtexto"></div>
+
+
+</div>
+<div id="containerzin"><a href="/" class="btnnavhist" id="anterior">Anterior</a>
+<a href="pdfs/pdf.pdf" class="btnnavhist" id="proximo">Próximo</a></div>
+
+<footer>
+    <p>Caio Henrique Oliveira Batista</p>
+    <img src="/SVGs/uvc.svg" alt="" style="fill:white">
+    <p>Todos os direitos reservados.</p>
+</footer>
+<script src="funcao de sinopse.js"></script>
+</body>
+
+<script>
+var histatual;
+if (localStorage.uvc_ep == 'null') {
+histatual = "txt/" + localStorage.uvc_hist + '.txt'
+} else {
+    histatual = "txt/" + localStorage.uvc_hist + '/' + localStorage.uvc_ep + '.txt'
+}
+
+if (localStorage.uvc_error == 'false') {
+var oReq = new XMLHttpRequest();
+oReq.onload = reqListener;
+oReq.open("get",histatual, true);
+oReq.send();
+
+function reqListener () {
+  document.getElementById('boxtexto').innerHTML = (this.responseText);
+};
+} 
+// botao de ativar scroll
+
+var boxinteira = document.getElementById("boxtexto");
+// var btn = window.getComputedStyle(boxinteira, "::before");
+
+function colocarscroll() {
+    boxinteira.classList.toggle('scroll')
+    // document.body.classList.toggle('coisou')
+}
+body = document.querySelector('body')
+boxinteira.addEventListener('dblclick',colocarscroll)
+body.addEventListener('keypress',(evento) => {
+if (evento.key === 's') {
+    colocarscroll()
+}
+})
+
+</script>
+
+<style>
+
+
+    @media (min-width:1001px) {
+
+    body {
+        background-color: #000000;
+    }
+
+
+    .partes {
+        width: 100vw;
+        position: absolute;
+        z-index: -20000;
+        background-image: url(/img/espaço.jpg);
+        background-repeat: repeat-y;
+        background-size: 230%;
+        height: 100%;
+        max-width: 1853px;
+    }
+
+    #boxtexto {
+        pointer-events: none;
+        pointer-events:fill;
+    }
+
+    #boxtexto::before {
+        pointer-events: all;
+        cursor: pointer;
+    }
+
+    #parte1 {
+        left: 0px;
+        background-size: 100%;
+    }
+
+    #parte3 {
+        display: none;
+        right: 0px;
+        background-size: 100%;
+    }
+}
+</style>
+
+

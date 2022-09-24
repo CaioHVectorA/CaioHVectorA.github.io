@@ -1,0 +1,143 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="textocomum.css">
+        <title>Contos</title>
+        
+</head>
+<body>
+    
+    <div id="preto">UVC | Caio Henrique <span id="ultimo">Quer mandar alguma mensagem?<a class="underline">Entre em contato</a></span></div>
+
+
+
+    <header class="header">
+        <a href="/index.html"><img class="uvcortado" src="img/uvc cortado.png" alt="UVCtransparente"></a>
+        <nav id="nav">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" id="btn-mobile"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg>
+            <!-- <button id="btn-mobile">M
+                enu</button> -->
+         <ul id="coiso">
+            <li><a href="/" class="menu">Series</a></li>
+            <li><a href="/" class="menu">Solos</a></li>
+            <li><a href="/" class="menu">Outros</a></li>
+            <li class="mobileonly"><a href="/" class="menu">Personagens</a></li>
+            <li><a href="/" class="menu">Saiba Mais</a></li>
+            <li class="mobileonly"><a href="/" class="menu">Doação</a></li>
+            <li class="mobileonly"><a href="/" class="menu">Contato</a></li>
+         </ul>
+    </nav>
+    </header>
+
+    <div id="fundoespaço">
+        <h2 id="titulonovidades">Novidades</h2>
+        <h3 id="subtitulonovidades">Confira os Lançamentos!</h3>
+        <div id="carretel">
+            <p id="carretexto"><a id="underline2" href="/">Congregadores</a></p>
+            <div class="setas">
+            <img src="SVGs/arrow_circle_left_FILL0_wght400_GRAD0_opsz48.svg" alt="setaesquerda" id="seta">
+            <img src="SVGs/arrow_circle_right_FILL0_wght400_GRAD0_opsz48.svg" alt="setadireita" id="seta2">
+        </div>
+        </div>
+
+        
+
+    </div>
+
+
+        <div id="dropbox">
+            <div id="caixa1" class="dropboxcontos">Todos os contos
+                <img class="setacaixa" id="setacaixa1" src="/SVGs/OOjs_UI_icon_expand.svg" alt="" >
+            </div>
+            <div id="caixa2" class="dropboxcontos">Series
+                <img class="setacaixa" id="setacaixa2" src="/SVGs/OOjs_UI_icon_expand.svg" alt="" >
+                
+            </div>
+            <div id="caixa3" class="dropboxcontos">Solos
+    
+                <img class="setacaixa" id="setacaixa3" src="/SVGs/OOjs_UI_icon_expand.svg" alt="" >
+
+            </div>
+        </div>
+
+        <div id="gridcaixas">
+                <div class="caixa" id="caixa1">
+                <a href="MeninoResilient.html"><div id="img-caixa1"></div></a>
+                <div class="caixatexto">
+                    <div id="tipos">
+                <p id="tipo" class="uppercase-caixa">Serie</p>
+                <p id="local" class="uppercase-caixa">terra</p>
+            </div>
+                <nobr id="caixatitulo">Menino Resiliente</nobr>
+                <p class="descricao">Conheça a trama de <span class="amarelo">Larry</span>,o menino que ganhou um poder espontaneamente que mudaria completamente sua vida.</p>
+                </div>
+                
+                </div>
+
+                <div class="caixa" id="caixa1">
+                    <a href="Congregadores.html"><div id="img-caixa2"></div></a>
+                    <div class="caixatexto">
+                        <div id="tipos">
+                    <p id="tipo" class="uppercase-caixa">Serie</p>
+                    <p id="local" class="uppercase-caixa">Universal</p>
+                </div>
+                    <nobr id="caixatitulo">Congregadores</nobr>
+                    <p class="descricao">Após ganhar um poder, <span class="amarelo">Ciecon</span> formará uma equipe e irá defender o universo dos malfeitores a todo custo.</p>
+                    </div>
+                    
+                    </div>
+                    <div class="caixa" id="caixa1">
+                        <a href="Red Right Hand.html"><div id="img-caixa3"></div></a>
+                        <div class="caixatexto">
+                            <div id="tipos">
+                        <p id="tipo" class="uppercase-caixa">Serie</p>
+                        <p id="local" class="uppercase-caixa">Universal</p>
+                    </div>
+                        <nobr id="caixatitulo">Red Right Hand</nobr>
+                        <p class="descricao">Conheça a equipe <span class="red">Red Right Hand</span>,que juntando as forças doros 5  superpoderosos,pretendem dominar todo o universo!</p>
+                        </div>
+                        
+                        </div>
+            
+        </div>
+
+    </body>
+
+
+    <script>
+
+        // var escolheu1;
+        // var abriu;
+        const box = document.getElementById('dropbox');
+
+        function abrir1 () {
+    
+        box.classList.toggle('active');  
+        document.getElementById('caixa1').classList.toggle('vira')
+    }
+
+    // function trocarpra2 () {
+    //     if (abriu) {
+    //         console.log('aaaa')
+    //     }
+    // }
+    function menu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');   
+}
+
+    const botao = document.getElementById('btn-mobile');
+
+    botao.addEventListener('click', menu);
+
+
+
+
+        var caixa1 = document.getElementById('caixa1')
+        var caixa2 = document.getElementById('caixa2')
+        var caixa3 = document.getElementById('caixa3')
+        caixa1.addEventListener('click',abrir1)
+        // caixa2.addEventListener('click',trocarpra2)
+
+    </script>
