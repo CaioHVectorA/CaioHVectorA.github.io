@@ -1,9 +1,15 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
         <link rel="stylesheet" href="textocomum.css">
         <link rel="stylesheet" href="animações.css">
+        <link rel="icon" 
+      type="image/png" 
+      href="logos/UVC transparente.png" />
+      <link rel="icon" 
+      type="image/png" 
+      href="img/uvc icon.png" />
         <title>Contos</title>
         
 </head>
@@ -20,13 +26,13 @@
             <!-- <button id="btn-mobile">M
                 enu</button> -->
          <ul id="coiso">
-            <li><a href="Contos.html" class="menu">Todos os Contos</a></li>
-            <li><a href="Contos.html"class="menu">Series</a></li>
-            <li><a href="Contos.html" class="menu">Solos</a></li>
+            <li><a href="#" onclick="reload()" class="menu">Todos os Contos</a></li>
+            <li><a href="#" onclick="reload()"class="menu">Series</a></li>
+            <li><a href="#" onclick="reload()" class="menu">Solos</a></li>
             <li class="mobileonly"><a href="/" class="menu">Personagens</a></li>
             <li><a href="SaibaMais.html" class="menu" id="naousa">Saiba Mais</a></li>
             <li class="mobileonly"><a href="/" class="menu">Doação</a></li>
-            <li class="mobileonly"><a href="/" class="menu">Contato</a></li>
+            <li class="mobileonly" title="Contato"><a href="/" class="menu">Contato</a></li>
          </ul>
     </nav>
     </header>
@@ -38,7 +44,7 @@
 
 
         <div class="carretel" id="carretel1"> 
-            <p id="carretexto"><a id="underline2" href="/"><nobr>Congregadores</nobr></a>Confira a jornada de Ciecon,o homem que sonha com um universo justo e livre.</p>
+            <p id="carretexto"><a id="underline2" href="Congregadores.html"><nobr>Congregadores</nobr></a>Confira a jornada de Ciecon,o homem que sonha com um universo justo e livre.</p>
             <div class="setas">
             <img src="SVGs/arrow_circle_left_FILL0_wght400_GRAD0_opsz48.svg" alt="setaesquerda" id="seta3">
             <img src="SVGs/arrow_circle_right_FILL0_wght400_GRAD0_opsz48.svg" alt="setadireita" id="seta4">
@@ -48,7 +54,7 @@
         
         
         <div class="carretel" id="carretel2">
-            <p id="carretexto"><a id="underline2" href="/"><nobr>Red Right Hand</nobr></a>Conheça a equipe dos 5 poderosos,que juntos,pretendem dominar o universo!</p>
+            <p id="carretexto"><a id="underline2" href="Red Right Hand.html"><nobr>Red Right Hand</nobr></a>Liderados por Arner,os soldados da RRH pretendem dominar todo o universo!</p>
             <div class="setas">
             <img src="SVGs/arrow_circle_left_FILL0_wght400_GRAD0_opsz48.svg" alt="setaesquerda" id="seta5">
             <img src="SVGs/arrow_circle_right_FILL0_wght400_GRAD0_opsz48.svg" alt="setadireita" id="seta6">
@@ -58,7 +64,7 @@
         
         
         <div class="carretel" id="carretel3">
-            <p id="carretexto"><a id="underline2" href="/"><nobr>Menino Resiliente</nobr></a>Leia a origem do Herói,que em meio a desastres,ganha uma anomalia.</p>
+            <p id="carretexto"><a id="underline2" href="MeninoResilient.html"><nobr>Menino Resiliente</nobr></a>Leia a origem do Herói,que em meio a desastres,ganha uma anomalia.</p>
             <div class="setas">
             <img src="SVGs/arrow_circle_left_FILL0_wght400_GRAD0_opsz48.svg" alt="setaesquerda" id="seta">
             <img src="SVGs/arrow_circle_right_FILL0_wght400_GRAD0_opsz48.svg" alt="setadireita" id="seta2">
@@ -100,7 +106,7 @@
                 
                 </div>
 
-                <div class="caixa" id="caixahist1" data-tipo="Serie" data-ep="null" data-hist="SE_CONG">
+                <div class="caixa" id="caixahist2" data-tipo="Serie" data-ep="null" data-hist="SE_CONG">
                     <a  href="Congregadores.html" data-ep="null" data-hist="SE_CONG"><div id="img-caixa2" data-ep="null" data-hist="SE_CONG"></div></a>
                     <div class="caixatexto">
                         <div id="tipos">
@@ -112,7 +118,7 @@
                     </div>
                     
                     </div>
-                    <div class="caixa" id="caixahist1" data-tipo="Serie" data-ep="null" data-hist="SE_RRH">
+                    <div class="caixa" id="caixahist3" data-tipo="Serie" data-ep="null" data-hist="SE_RRH">
                         <a  href="Red Right Hand.html" data-ep="null" data-hist="SE_RRH"><div id="img-caixa3" data-ep="null" data-hist="SE_RRH"></div></a>
                         <div class="caixatexto">
                             <div id="tipos">
@@ -125,7 +131,7 @@
                         
                         </div>
 
-                            <div class="caixa" id="caixahist1" data-tipo="Solo" data-ep="null" data-hist="S_KER">
+                            <div class="caixa" id="caixahist4" data-tipo="Solo" data-ep="null" data-hist="S_KER">
                             <a  href="telahist.html" data-ep="null" data-hist="S_KER"><div id="img-caixa4" data-ep="null" data-hist="S_KER"></div></a>
                             <div class="caixatexto">
                                 <div id="tipos">
@@ -138,7 +144,8 @@
                             
                             </div>
             
-                            <div class="caixa" id="caixahist1" data-tipo="Solo" data-ep="null" data-hist="S_HAD">
+                            
+                            <div class="caixa" id="caixahist5" data-tipo="Solo" data-ep="null" data-hist="S_HAD">
                                 <a  href="telahist.html" data-ep="null" data-hist="S_HAD"><div id="img-caixa5" data-ep="null" data-hist="S_HAD"></div></a>
                                 <div class="caixatexto">
                                     <div id="tipos">
@@ -150,7 +157,7 @@
                                 </div>
                                 
                                 </div>
-                                <div class="caixa" id="caixahist1" data-tipo="Solo" data-ep="null" data-hist="S_PM">
+                                <div class="caixa" id="caixahist6" data-tipo="Solo" data-ep="null" data-hist="S_PM">
                                     <a  href="telahist.html" data-ep="null" data-hist="S_PM"><div id="img-caixa6" data-ep="null" data-hist="S_PM"></div></a>
                                     <div class="caixatexto">
                                         <div id="tipos">
@@ -163,7 +170,7 @@
                                     
                                     </div>
 
-                                    <div class="caixa" id="caixahist1" data-tipo="Solo" data-ep="null" data-hist="S_CIEC">
+                                    <div class="caixa" id="caixahist7" data-tipo="Solo" data-ep="null" data-hist="S_CIEC">
                                         <a  href="telahist.html" data-ep="null" data-hist="S_CIEC"><div id="img-caixa7" data-ep="null" data-hist="S_CIEC"></div></a>
                                         <div class="caixatexto">
                                             <div id="tipos">
@@ -175,6 +182,32 @@
                                         </div>
                                         
                                         </div>
+
+                                        <div class="caixa" id="caixahist8" data-tipo="Solo" data-ep="null" data-hist="S_GLAC">
+                                            <a  href="telahist.html" data-ep="null" data-hist="S_GLAC"><div id="img-caixa8" data-ep="null" data-hist="S_GLAC"></div></a>
+                                            <div class="caixatexto">
+                                                <div id="tipos">
+                                            <p id="tipo" class="uppercase-caixa">Solo</p>
+                                            <p id="local" class="uppercase-caixa">Terra</p>
+                                        </div>
+                                            <nobr id="caixatitulo" style="font-size: 24px;">O Glacial Fim do Mundo</nobr>
+                                            <p class="descricao" style="font-size:20px">Cole Froz chega no planeta terra,e em poucas horas já causa problemas severos o suficiente para causar um apocalipse em todo o globo.</p>
+                                            </div>
+                                            
+                                            </div>
+
+                                            <div class="caixa" id="caixahist9" data-tipo="Serie" data-ep="null" data-hist="S_GUA">
+                                                <a  href="telahist.html" data-ep="null" data-hist="S_GUA"><div id="img-caixa9" data-ep="null" data-hist="S_GUA"></div></a>
+                                                <div class="caixatexto">
+                                                    <div id="tipos">
+                                                <p id="tipo" class="uppercase-caixa">Serie</p>
+                                                <p id="local" class="uppercase-caixa">Terra</p>
+                                            </div>
+                                                <nobr id="caixatitulo">Guardiões</nobr>
+                                                <p class="descricao">Se aprofunde na história da nascença dos lendários heróis de Beatus.</p>
+                                                </div>
+                                                
+                                                </div>
             
         </div>
         <footer>
@@ -189,6 +222,12 @@
 
 
     <script>
+
+        if (localStorage.uvc_scroll === 'sim') {
+            window.scroll(0,736) 
+                 window.localStorage.setItem('uvc_scroll','nao')
+
+        }
 
 
         const box = document.getElementById('dropbox');
@@ -252,6 +291,9 @@ for (let l6 = 0; l6 < series.length; l6++) {
     }
 
         }
+    } else {
+    box.dataset.atual = "Series"
+
     }
 }
 for (let l2 = 0; l2 < solos.length; l2++) {
@@ -484,6 +526,11 @@ for (let index = 0; index < solos.length; index++) {
         // }
     })
     
+}
+
+
+function reload() {
+    document.location.reload(true)
 }
 
         

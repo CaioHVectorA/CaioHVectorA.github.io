@@ -1,1 +1,1 @@
-voce leu o readme
+UVC é um projeto que visa distribuir histórias fictíceas e fantásticas 

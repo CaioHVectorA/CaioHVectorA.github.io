@@ -21,14 +21,17 @@ navTodos.addEventListener('click',localtodos)
 
 function localsolos () {
     window.localStorage.setItem('uvc_tipo','solos')
+    window.localStorage.setItem('uvc_scroll','sim')
 }
 
 function localtodos () {
     window.localStorage.setItem('uvc_tipo','todos')
+    window.localStorage.setItem('uvc_scroll','sim')
 }
 
 function localseries () {
     window.localStorage.setItem('uvc_tipo','series')
+    window.localStorage.setItem('uvc_scroll','sim')
 }
 
 

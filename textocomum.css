@@ -123,7 +123,8 @@ h2,h3 {
     /* left: 65vh; */
     text-align: center;
     opacity: 0;
-    font-size: 64px;
+    transition: 280ms;
+    font-size: 32px;
     padding: 1.8rem;
     color: #F8BC22;
     background: var(--cor-destaque);
@@ -312,11 +313,17 @@ font-family: Roboto;
     /* text-transform: uppercase; */
     color: var(--cor-textose);
     display: flex;
+    transition: 220ms;
  }
 
 .menu {
     padding-right: 10px;
     border-right: solid #202020 2px;
+}
+
+.menu:hover {
+    transform: scale(1.08);
+
 }
 
 #naousa {
@@ -488,7 +495,7 @@ footer {
     align-items: center;
     padding: 40 20;
     padding-bottom: 80;
-    margin-top: 40px;
+    margin-top: 64px;
 }
 
 
@@ -524,22 +531,18 @@ footer img {
 }
 
 #fundoespaço {
-    /* z-index: 20000000000000001; */
-    background: black;
-    /* background-image: url(img/espaço.jpg); */
+    background-image: url(img/espaço.jpg);
     width: 100%;
     height: calc(100vh - 101px);
     max-width: 1900px;
     margin: 0 auto;
     margin-bottom: 48px;
     display: flex;
-    /* margin-top: 101px;    */
-    /* height: calc(100% - 101px); */
-    /* margin: 0 auto; */
+    background-size: 85%;
 }
 
 #spacex {
-     animation: mov 30s alternate infinite ease-in-out; 
+     animation: mov 20s alternate infinite ease-in-out; 
 
     height: calc(100vh - 101px);
     width: 125%;
@@ -548,6 +551,7 @@ footer img {
     background-size: 85%;
 
 }
+
 
 .carretel {
     margin: auto;
@@ -565,18 +569,21 @@ footer img {
 }
 
 #carretel1 {
-    background-image: url(logos/congregadores\ mão.png);
-    background-size: 101%;
+    background-image: url(img/Cong_Slide.png);
+    background-size: 100%;
     
 }
 
 #carretel2 {
-    background-image: url(logos/RRH\ vermelha.png);
+    background-image: url(img/rrh\ slide.png);
+    background-size: 100%;
+
 }
 
 #carretel3 {
-    background-image: url(logos/Menino\ Resiliente.png);
-    background-size: 75%;
+    background-image: url(img/MR\ slide.png);
+    background-size: 130%;
+    background-position: top center;
 }
 
 #carretexto {
@@ -633,6 +640,15 @@ footer img {
     color: var(--cor-textose);
     box-shadow: inset 0px -4px 1px rgba(0, 0, 0, 0.35);
 
+}
+
+#dropbox::after {
+    content: "Clique nas imagens para acessar a história!";
+    font-size: 14px;
+    font-family: Roboto_Serifa;
+    justify-self: center;
+   position: relative;
+   top: 6px;
 }
 
 .dropboxcontos.hover, .dropboxcontos:hover {
@@ -713,7 +729,7 @@ footer img {
     margin-top: 8px;
     position: absolute;
     right: -60px;
-    bottom: 80px;
+    bottom: 96px;
     z-index: 2131231731;
     justify-self: center;
     max-width: 36px;
@@ -746,16 +762,55 @@ transition: 170ms;
     transform: scale(1.15);
 }
 
-#gridcaixas:has(.caixa:hover) .caixa:not(:hover) {
-    transform: scale(0.85);
+/* ordem: 1MR 2CONG 3RRH 4KER 5HAD 6PM 7CIEC 8GLACIAL 9GUARD*/
+
+#caixahist3 {
+order: 1;
 }
+
+#caixahist1 {
+    order: 2;
+}
+
+#caixahist7 {
+    order: 3;
+}
+
+#caixahist2 {
+    order: 4;
+}
+
+#caixahist4 {
+    order: 5;
+}
+
+#caixahist9 {
+order: 6;
+}
+
+#caixahist6 {
+    order: 7;
+}
+
+#caixahist5 {
+    order: 8;
+}
+
+#caixahist8 {
+    order: 9;
+}
+/*  */
+
+/* #gridcaixas:has(.caixa:hover) .caixa:not(:hover) {
+    transform: scale(0.85);
+} */
 
 
 
 #img-caixa1 {
-    background-image: url(img/MeninoResiliente.png);
-    background-position: center;
-    background-size: 100%;
+    background-image: url(logos/mr\ logo.png);
+    background-position: bottom center;
+    background-size: 90%;
     width: 300px;
     height: 300px;
 }
@@ -809,6 +864,24 @@ transition: 170ms;
     background-image: url(logos/Untitled-1.jpg);
     background-position: center;
     background-size: 102%;
+    width: 300px;
+    height: 300px;
+}
+
+#img-caixa8 {
+    background-color: var(--cor-textose);
+    background-image: url(img/o\ glacial\ fim\ do\ mundo.png);
+    background-position: center;
+    background-size: 102%;
+    width: 300px;
+    height: 300px;
+}
+
+#img-caixa9 {
+    background-color: var(--cor-textose);
+    background-image: url(img/guardiões.png);
+    background-position: center;
+    background-size: 100%;
     width: 300px;
     height: 300px;
 }
@@ -881,9 +954,25 @@ padding: 0px 0px 20px 0px;
         /* margin-right: 12px; */
 }
 
+#spacex {
+    left: 0px;
+    width: calc(200px + 100vw);
+}
+
+ #carretel1 {
+    background: url(img/Cong_Slide.png) repeat-y left top;
+    background-size: 210%;
+ }
+
+ #carretel2 {
+    background: url(img/rrh\ slide.png) no-repeat left;
+    background-size: 155%;
+ }
+
 #carretel3 {
-    background-image: url(logos/Menino\ Resiliente.png);
-    background-size: 105%;
+    background-image: url(img/MR\ slide.png);
+    background-size: 185%;
+    background-position: center top;
 }
 
 
@@ -1411,6 +1500,11 @@ position: relative;
     margin-left: 20px;
 }
 
+#flex-tags a {
+    cursor: auto;
+    pointer-events: none;
+}
+
 
 
 #boxtexto {
@@ -1429,7 +1523,7 @@ position: relative;
     scrollbar-color: var(--cor-destaquesecundaria);
     scrollbar-width: thin;
     width: 75%;
-    margin-top: -500px;
+    margin-top: -464px;
     margin-left: -48px;
     border-radius: 5px;
     justify-self: center; 
@@ -1462,6 +1556,7 @@ position: relative;
 }
 
 #boxsinopse {
+    min-width: 360px;
     max-width: calc(270px + 2vw + 5%);
     width: calc(270px + 2vw + 5%);
     border: #e7e7e7 2px solid;
@@ -1478,6 +1573,7 @@ position: relative;
 }
 
 #dropboxinfos {
+    min-width: 360px;
     margin-top: 50px;
     left: calc(20px);
     border: #e7e7e7 2px solid;

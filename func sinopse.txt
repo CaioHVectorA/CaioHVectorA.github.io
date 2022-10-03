@@ -33,8 +33,8 @@ else if (localStorage.uvc_hist === "S_CIEC") {
   }
 
 else if (localStorage.uvc_hist === "S_PM") {
-    sinopse = "OBS:É RECOMENDADO QUE ANTES DE VER ESSA HISTÓRIA 'VOCÊ LEIA CONGREGADORES, ATO I', Entenda a origem dos Aeelsedificantes, e como eles resistiram a soberania da Red Right Hand."   
-    info = "A primeira espécie não humana apresentada nas histórias, os Aeelsedificantes são um povo importante para o enredo geral do UVC. O fim da história é aberto, pois é continuado em Congregadores"
+    sinopse = "OBS:É RECOMENDADO QUE ANTES DE VER ESSA HISTÓRIA VOCÊ LEIA CONGREGADORES, 'ATO I', Entenda a origem dos Aedificantes, e como eles resistiram a soberania da Red Right Hand."   
+    info = "A primeira espécie não humana apresentada nas histórias, os Aedificantes são um povo importante para o enredo geral do UVC. O fim da história é aberto, pois é continuado em Congregadores"
     document.title = 'Punho Mortal'  
     titulo = 'Punho Mortal'
     subtitulo = ''
@@ -60,18 +60,18 @@ else if (localStorage.uvc_hist === "S_PM") {
             subtitulo = 'Corrida Capitalista'
           }
           if (localStorage.uvc_ep == 2) {
-            sinopse = 'a'
+            sinopse = 'O roubo tem seu início.Será que os irmãos conseguirão o tão sonhado tesouro?'
            document.title = 'Red Right Hand,EP 02' 
-           subtitulo = 'O Roubo'  
+           subtitulo = 'Invasões'  
           }
           if  (localStorage.uvc_ep == 3) {
-            sinopse = 'a'  
+            sinopse = 'A tranquilidade é interrompida em Severum. Será que a praça se tornará um campo de guerra?'  
             document.title = 'Red Right Hand,EP 03' 
             subtitulo = 'Brechas do passado' 
           }
           if  (localStorage.uvc_ep == 4) {
             
-            sinopse = 'a'   
+            sinopse = 'Arner reune todos pra reunir os fatos e decidir o futuro de Severum.'   
             document.title = 'Red Right Hand,EP 04' 
             subtitulo = 'O Veredicto'
           }

@@ -21,10 +21,7 @@ else if (localStorage.uvc_hist === "S_CIEC") {
     document.title = 'Ciecon,o Justiceiro Espacial'
     titulo = 'Ciecon'
     subtitulo = 'O Justiceiro Espacial'
-
-  }
-
-  else if (localStorage.uvc_hist === "S_HAD") {
+  }  else if (localStorage.uvc_hist === "S_HAD") {
     sinopse = "Veja os objetivos malignos e a origem do grandioso e temido Hades, conhecido como o Demônio."   
     info = "O Vilão original e a representação do mal, Hades era pra ser uma história que explica outras histórias e a origem dos superpoderosos.Sem um final, o desfecho da história do grande Demônio será continuada em outras histórias, como Ciecon, Congregadores, Guardiões e muito mais! "
     document.title = 'Hades'
@@ -33,14 +30,14 @@ else if (localStorage.uvc_hist === "S_CIEC") {
   }
 
 else if (localStorage.uvc_hist === "S_PM") {
-    sinopse = "OBS:É RECOMENDADO QUE ANTES DE VER ESSA HISTÓRIA 'VOCÊ LEIA CONGREGADORES, ATO I', Entenda a origem dos Aeelsedificantes, e como eles resistiram a soberania da Red Right Hand."   
-    info = "A primeira espécie não humana apresentada nas histórias, os Aeelsedificantes são um povo importante para o enredo geral do UVC. O fim da história é aberto, pois é continuado em Congregadores"
+    sinopse = "OBS:É RECOMENDADO QUE ANTES DE VER ESSA HISTÓRIA VOCÊ LEIA CONGREGADORES, 'ATO I'. Entenda a origem dos Aedificantes, e como eles resistiram a soberania da Red Right Hand."   
+    info = "A primeira espécie não humana apresentada nas histórias, os Aedificantes são um povo importante para o enredo geral do UVC. O fim da história é aberto, pois é continuado em Congregadores"
     document.title = 'Punho Mortal'  
     titulo = 'Punho Mortal'
     subtitulo = ''
   }
 
-   else if (localStorage.uvc_hist === "S_GFM") {
+   else if (localStorage.uvc_hist === "S_GLAC") {
         sinopse = "Cole Froz chega na terra, e junto a um colega, decidiu tentar destruir todo o planeta."
         info = 'O Primeiro ato Secundário do UVC, O Glacial Fim do Mundo é também o segundo arco que apresenta um apocalipse mundial(seguido do apocalipse vampírico, Telecinese 2). Essa história é, além de uma dinâmica e cheia de ação, traz reflexões e problemas iminentes. Cole, da família rica Froz, ainda terá(ou talvez já tenha) histórias, tanto primárias quanto secundárias.Uma das mais recentes, foi construída em 28/01/2022 e, como Arner diz:"A Red Right perecerá durante a Eternidade" '
         document.title = 'O Glacial Fim do Mundo'
