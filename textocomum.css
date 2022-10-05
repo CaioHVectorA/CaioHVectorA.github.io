@@ -74,6 +74,8 @@ a {
     /* gap: 300px; */
 }
 
+
+
 h1,h2,h3 {
     color:var(--cor-textopr);
     font-size: 6rem;
@@ -753,13 +755,17 @@ footer img {
 }
 
 .caixa {
+    /* border: solid #101010 3.6px; */
 background: #131313;
 width: 300px;
 transition: 170ms;
+box-shadow: 15px 15px 45px 0px rgba(0,0,0,0.68);
+
 }
 
 .caixa:hover {
     transform: scale(1.15);
+box-shadow: 15px 15px 35px 0px rgba(0,0,0,1);
 }
 
 /* ordem: 1MR 2CONG 3RRH 4KER 5HAD 6PM 7CIEC 8GLACIAL 9GUARD*/
@@ -890,7 +896,7 @@ order: 6;
     height: 215px;
 background: #131313;
 /* background: #1C1818; */
-box-shadow: inset 0px -6px 2px rgba(0, 0, 0, 0.35);
+box-shadow: inset 0px -6px 2px rgba(0, 0, 0, 0.05);
 padding: 0px 0px 20px 0px;
 }
 
