@@ -45,6 +45,12 @@ else if (localStorage.uvc_hist === "S_PM") {
         subtitulo = ''
       }
 
+
+      else if (localStorage.uvc_hist === "SE_GUA") {
+      sinopse = "a"
+      substitulo = ""
+      }
+
    else if (localStorage.uvc_hist === "SE_RRH") { 
         if (localStorage.uvc_ep == 0) {
           sinopse = "A primeira de muitas reuniões da Red Right Hand.Quais serão seus objetivos?"   
