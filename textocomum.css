@@ -116,6 +116,7 @@ h2,h3 {
     animation: slideup 1s;
 }
 
+
 .comece {
     /* position: relative; */
     max-width: fit-content;
@@ -212,7 +213,7 @@ p {
 #ultimo {
     position: relative;
     top: 0px;
-    left:61.4%;
+    left:61.3%;
 }
 
 #fundo {
@@ -246,7 +247,7 @@ p {
     font-family: Arial;
     max-height: 20px;
     margin: 0;
-    padding: 5px 0px;
+    padding: 5px 10px;
     max-width: 1853px;
     color: var(--cor-textote);
 }
@@ -1529,7 +1530,7 @@ position: relative;
     scrollbar-color: var(--cor-destaquesecundaria);
     scrollbar-width: thin;
     width: 75%;
-    margin-top: -464px;
+    margin-top: -42%;
     margin-left: -48px;
     border-radius: 5px;
     justify-self: center; 
@@ -1661,6 +1662,20 @@ position: relative;
     grid-column: 2;
 }
 
+    #subtitulonomehist {
+        font-family: Roboto_Serifa;
+        font-weight: 800;
+        font-size: 32px;
+        background-color: rgba(92, 22, 74, 0.3);
+        width: fit-content;
+        padding: 5 10;
+    }
+
+    #titulonomehist {
+        background-color: rgba(92, 22, 74, 0.3);
+        width: fit-content;
+        padding: 5 10;
+    }
 @media (max-width: 1000px) {
 
     #boxtexto::before {
@@ -1685,6 +1700,7 @@ position: relative;
     #titulonomehist, #subtitulonomehist {
         text-align: center;
     }
+
 
     #titulosubtitulohist {
         grid-row: 1;

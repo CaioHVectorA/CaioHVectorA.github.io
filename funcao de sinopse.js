@@ -5,12 +5,13 @@
 
 var sinopse;
 var info;
+var subtitulo;  
 localStorage.setItem('uvc_error','false')
 
 
 if (localStorage.uvc_hist === "S_KER") {
     sinopse = "Kerry vivia feliz a partir do luxo com seus pais, porém do dia pra noite sua vida se torna um pesadelo, e sua maior ambição se torna a vingança."
-    info = 'Kerry é Uma história violenta, sofrida e uma boa retratante da cidade desigual e perigosa que é Glen.Criado para ser um anti-herói com uma personalidade forte e temperamental, O personagem Kerry apareceu incialmente nas tramas de apocalipse que Telecinese passou, em 07/07/2019, e depois teve sua primeira(de muitas) histórias originais.Ele também aparece como um Guardião, em <a href="Congregadores.html" style="font-size:22.5px; Color:#cfd4ae; text-decoration:underline" >Guardiões</a>'
+    info = 'Kerry é Uma história violenta, sofrida e uma boa retratante da cidade desigual e perigosa que é Glen.Criado para ser um anti-herói com uma personalidade forte e temperamental, O personagem Kerry apareceu incialmente nas tramas de apocalipse que Telecinese passou, em 07/07/2019, e depois teve sua primeira(de muitas) histórias originais.Ele também aparece como um Guardião, em <a href="Guardiões.html" style="font-size:22.5px; Color:#cfd4ae; text-decoration:underline" >Guardiões</a>'
     document.title = 'Kerry, O Guerreiro Da Vingança'
     titulo = 'Kerry'
     subtitulo = 'O Guerreiro da Vingança'
@@ -47,8 +48,25 @@ else if (localStorage.uvc_hist === "S_PM") {
 
 
       else if (localStorage.uvc_hist === "SE_GUA") {
-      sinopse = "a"
-      substitulo = ""
+        if (localStorage.uvc_ep == 0) {
+          sinopse = "O Início da estadia da família de Beenie em Beatus já começa com episódios bizarros..."
+          subtitulo = 'Mudanças'
+        }
+
+        if (localStorage.uvc_ep == 1) {
+          sinopse = "Beenie se vê sem ninguém e sem chão,porém diante de tanta confusão ele descobre que tem um poder inexplicável."
+          subtitulo = 'Dificuldades'
+        }
+
+        if (localStorage.uvc_ep == 2) {
+          sinopse = 'Está na hora de Beenie testar seus poderes.Como será que ele vai se sair?'
+          subtitulo = 'Poderes'
+        }
+
+        titulo = 'Os Guardiões'
+       let numeroep = parseInt(localStorage.uvc_ep)
+        document.title = 'Guardiões EP' + ++numeroep
+        info = "Os Guardiões,a primeira história de equie criada é a imagem do UVC,uma equipe formada por uma família comum,com defeitos e trejeitos de pessoas normais.A primeira história criada foi em 09/06/2019,mas o Telecinese foi o primeiro herói criado quando eu era apenas uma criança,em meados de 2016."
       }
 
    else if (localStorage.uvc_hist === "SE_RRH") { 
@@ -131,6 +149,12 @@ else if (localStorage.uvc_hist === "S_PM") {
       document.querySelector('#boxtexto').innerHTML = '<h1 style="font-size=30px;color:black; font-family=Roboto_Serifa">Ocorreu um erro :(<h1><br><a style="font-size=30px" href="Contos.html">Voltar para o Lobby</a>'
 
     }
+    if (!subtitulo) {
+      subtitulo = 'ocorreu um erro'
+      sinopse = 'Ocorreu um erro.Contate ao Suporte'
+    }
+
+    
 
     boxsinopse = document.querySelector('#boxsinopse')
     boxinfos = document.querySelector('#dropboxinfos')
@@ -141,4 +165,6 @@ else if (localStorage.uvc_hist === "S_PM") {
     boxinfos.innerHTML = info
     selectitulo.innerText = titulo
     selecsubtitulo.innerText = subtitulo
+
+
 

@@ -57,6 +57,7 @@
     <p>Todos os direitos reservados.</p>
 </footer>
 <script src="funcao de sinopse.js"></script>
+<script src="script total.js"></script>
 </body>
 
 <script>
@@ -99,7 +100,7 @@ btn1 = document.querySelector('#anterior')
 btn2 = document.querySelector('#proximo')
 
 btn2.addEventListener('click', () => {localStorage.uvc_ep++; location.reload})
-btn1.addEventListener('click', () => {localStorage.uvc_ep -= 1; location.reload})
+btn1.addEventListener('click', () => {if(localStorage.uvc_ep > 0) {localStorage.uvc_ep -= 1; location.reload}})
 
 if (localStorage.uvc_ep === 'null') {
     for (let index = 0; index < btns.length; index++) {
