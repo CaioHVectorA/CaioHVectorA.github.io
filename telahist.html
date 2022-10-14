@@ -37,11 +37,11 @@
 <h1 id="titulonomehist">Congregadores</h1>
 <h2 id="subtitulonomehist">Ep 3:A Falsidade</h2>
 </div>
-<p id="boxsinopse">Ocorrou um Erro.</p>
+<p id="boxsinopse"></p>
 <div id="boxiframe"><object style="width:463;" height="565"  data="pdfs/S_Ciecon.pdf"></object></div>
 <h1 id="infos">Infos</h1>
 <h2 id="infos2">Informações sobre a história abaixo.</h2>
-<p id="dropboxinfos">OCORREU UM ERRO.
+<p id="dropboxinfos">
 
 </p>
 <div id="boxtexto"></div>
@@ -68,16 +68,18 @@ histatual = "txt/" + localStorage.uvc_hist + '.txt'
     histatual = "txt/" + localStorage.uvc_hist + '/' + localStorage.uvc_ep + '.txt'
 }
 
-if (localStorage.uvc_error == 'false') {
+
 var oReq = new XMLHttpRequest();
 oReq.onload = reqListener;
 oReq.open("get",histatual, true);
 oReq.send();
 
 function reqListener () {
+    if (oReq.status != 404) {
   document.getElementById('boxtexto').innerHTML = (this.responseText);
+    } else { document.querySelector('body').style.display = 'none';alert('você tentou prosegguir para uma história inexistente.');window.location.assign("/Contos.html "); }
 };
-} 
+ 
 // botao de ativar scroll
 
 var boxinteira = document.getElementById("boxtexto");

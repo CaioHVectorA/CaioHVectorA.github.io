@@ -1530,7 +1530,7 @@ position: relative;
     scrollbar-color: var(--cor-destaquesecundaria);
     scrollbar-width: thin;
     width: 75%;
-    margin-top: -42%;
+    margin-top: calc(-40% - 150px);
     margin-left: -48px;
     border-radius: 5px;
     justify-self: center; 
@@ -1666,13 +1666,13 @@ position: relative;
         font-family: Roboto_Serifa;
         font-weight: 800;
         font-size: 32px;
-        background-color: rgba(92, 22, 74, 0.3);
+        background-color: rgba(17, 17, 17, 0.3);
         width: fit-content;
         padding: 5 10;
     }
 
     #titulonomehist {
-        background-color: rgba(92, 22, 74, 0.3);
+        background-color: rgba(17, 17, 17, 0.3);
         width: fit-content;
         padding: 5 10;
     }
@@ -1681,6 +1681,8 @@ position: relative;
     #boxtexto::before {
         display: none;
     }
+
+
 
     #containerhist {
         margin: 0 auto;
@@ -1699,6 +1701,12 @@ position: relative;
 
     #titulonomehist, #subtitulonomehist {
         text-align: center;
+        background-color: transparent;
+    }
+
+    #titulonomehist {
+        margin: 0 auto !important;
+        font-size: 32px;
     }
 
 
@@ -1752,14 +1760,18 @@ position: relative;
         bottom: 80px;
         border: 0px;
         background: #262020;
-        width: 100vw;
-        max-width: calc(100vw - 100px);
-        padding: 12 40;
+        width: calc(90vw - 60px);
+        /* max-width: calc(90vw - 100px); */
+        padding: 12 10;
         grid-row: 2;
         margin: 0 auto;
         font-family: Roboto_Serifa;
         font-size: 18px;
         /* margin-bottom: 16px; */
+    }
+
+    #boxsinopse {
+        margin-top: 58px;
     }
     
     #titulonomehist {

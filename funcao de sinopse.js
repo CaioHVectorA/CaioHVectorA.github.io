@@ -141,17 +141,17 @@ else if (localStorage.uvc_hist === "S_PM") {
           info = 'Red Right Hand, uma das principais e mais influentes equipes do Ato I do UVC, foi criada recentemente e com o intuito de dividir opiniões, andar pelo certo, ou arriscar o errado?Paz ou o Triunfo?Descubra qual você acha o melhor caminho!'
 
     } else {
-      titulo = 'Erro'
-      substitulo = ''
-      sinopse = ''
-      info = ''
+      titulo = 'Error 404'
+      substitulo = ' '
+      sinopse = ' '
+      info = ' '
       localStorage.setItem('uvc_error','true')
       document.querySelector('#boxtexto').innerHTML = '<h1 style="font-size=30px;color:black; font-family=Roboto_Serifa">Ocorreu um erro :(<h1><br><a style="font-size=30px" href="Contos.html">Voltar para o Lobby</a>'
 
-    }
-    if (!subtitulo) {
-      subtitulo = 'ocorreu um erro'
-      sinopse = 'Ocorreu um erro.Contate ao Suporte'
+    // }
+    // if (!subtitulo) {
+    //   subtitulo = 'ocorreu um erro'
+    //   sinopse = 'Ocorreu um erro.Contate ao Suporte'
     }
 
     
