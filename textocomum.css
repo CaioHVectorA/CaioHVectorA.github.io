@@ -1530,7 +1530,7 @@ position: relative;
     scrollbar-color: var(--cor-destaquesecundaria);
     scrollbar-width: thin;
     width: 75%;
-    margin-top: calc(-40% - 150px);
+    margin-top: calc(-40% - 0px);
     margin-left: -48px;
     border-radius: 5px;
     justify-self: center; 
@@ -1619,7 +1619,7 @@ position: relative;
     border-radius: 500px;
     font-family: Roboto;
     grid-column: 2;
-    border: 3px transparent solid;
+    border: 4px transparent solid;
     /* box-shadow: inset 0px -2px 4px rgba(0, 0, 0, 0.5); */
     transition: 0.12s;
 }

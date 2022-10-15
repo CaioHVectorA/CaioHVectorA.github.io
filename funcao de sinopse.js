@@ -46,6 +46,27 @@ else if (localStorage.uvc_hist === "S_PM") {
         subtitulo = ''
       }
 
+      else if (localStorage.uvc_hist === "SE_CONG") {
+        if (localStorage.uvc_ep == 0) {
+          sinopse = 'Ciecon continua em suas atividades e se dá conta que talvez seja uma boa ideia criar uma equipe...'
+          subtitulo = 'A Extinção'
+        }
+
+        if (localStorage.uvc_ep == 1) {
+          sinopse = 'Junto com seu novo aliado,Ciecon sintetiza forças para derrotar o Robô que parecia ser implacável'
+          subtitulo = 'Uma Nova Amizade'
+        }
+
+        if (localStorage.uvc_ep == 2) {
+          sinopse = 'Ciecon conhece o mais o seu aliado numa missão repentina.Será que seu plano de formar uma equipe é o melhor caminho?'
+          subtitulo = 'O Futuro Incerto'
+        }
+        titulo = 'Congregadores'
+        let numeroep = parseInt(localStorage.uvc_ep)
+        document.title = 'Congregadores EP' + ++numeroep
+        info = 'A primeira equipe inter-universal foi criada primeiramente em 20/09/2019.Por sinal,seu primeiro nome foi "LACP",que significa liga anti colonização de planetas.Mas além de ser um nome enorme,não soa bem e não é sugestivo,além de ser parecido com terceiros.Sua ideia é ser uma equipe literalmente sem fim,que vai ter fases e fases,e vai perecer durante toda a vida do UVC. '
+      }
+
 
       else if (localStorage.uvc_hist === "SE_GUA") {
         if (localStorage.uvc_ep == 0) {

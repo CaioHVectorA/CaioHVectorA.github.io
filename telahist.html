@@ -102,7 +102,8 @@ btn1 = document.querySelector('#anterior')
 btn2 = document.querySelector('#proximo')
 
 btn2.addEventListener('click', () => {localStorage.uvc_ep++; location.reload})
-btn1.addEventListener('click', () => {if(localStorage.uvc_ep > 0) {localStorage.uvc_ep -= 1; location.reload}})
+btn1.addEventListener('click', () => {if(localStorage.uvc_ep > 0) {localStorage.uvc_ep -= 1; location.reload; let margin = boxinteira.style.marginBottom;margin = boxinteira.clientHeight / 10;boxinteira.style.marginBottom = margin;
+ }})
 
 if (localStorage.uvc_ep === 'null') {
     for (let index = 0; index < btns.length; index++) {
@@ -111,6 +112,7 @@ if (localStorage.uvc_ep === 'null') {
     }
 }
 
+let margin = boxinteira.style.marginBottom;margin = boxinteira.clientHeight / 10;boxinteira.style.marginBottom = margin;
 
 </script>
 
